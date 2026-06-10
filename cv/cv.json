@@ -2,85 +2,317 @@
   "nombre": "Luis A. González Pérez",
   "categorias": [
     {
-      "id": "contacto",
+      "titulo": "Perfil",
+      "entradas": [
+        {
+          "incluir": true,
+          "titulo": "",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "Estudiante de Ciencias de Computación en la Universidad de Puerto Rico, Recinto de Mayagüez (graduación esperada: mayo 2027). Interés en DevSecOps, ciberseguridad, aprendizaje automático y desarrollo de software, con experiencia en proyectos de inteligencia artificial, modelos predictivos y diseño de compiladores."
+        }
+      ]
+    },
+    {
       "titulo": "Contacto",
       "entradas": [
-        { "incluir": true, "titulo": "Teléfono", "detalle": "(787) 612-7847" },
-        { "incluir": true, "titulo": "Correo", "detalle": "luis.gonzalez222@upr.edu" },
-        { "incluir": true, "titulo": "LinkedIn", "detalle": "www.linkedin.com/in/luis-gonzalez0822" }
+        {
+          "incluir": true,
+          "titulo": "Correo electrónico",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "luis.gonzalez222@upr.edu"
+        },
+        {
+          "incluir": true,
+          "titulo": "GitHub",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "github.com/LuisGonzalez7847"
+        },
+        {
+          "incluir": true,
+          "titulo": "Ubicación",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "Mayagüez, Puerto Rico"
+        }
       ]
     },
     {
-      "id": "objetivo",
-      "titulo": "Objetivo",
-      "entradas": [
-        { "incluir": true, "detalle": "Estudiante de Ciencias de Computación en la Universidad de Puerto Rico en busca de internados, coops o proyectos de investigación donde pueda aportar y desarrollar destrezas de liderazgo, trabajo en equipo y manejo de proyectos, ganando experiencia práctica en proyectos innovadores." }
-      ]
-    },
-    {
-      "id": "educacion",
       "titulo": "Educación",
       "entradas": [
-        { "incluir": true, "titulo": "Universidad de Puerto Rico - Recinto de Mayagüez", "subtitulo": "Bachillerato en Ciencias de Computación", "fecha": "Graduación esperada: Mayo 2027" }
+        {
+          "incluir": true,
+          "titulo": "Universidad de Puerto Rico, Recinto de Mayagüez",
+          "subtitulo": "Bachillerato en Ciencias de Computación",
+          "fecha": "Graduación esperada: mayo 2027",
+          "detalle": "Facultad de Artes y Ciencias, Departamento de Matemáticas."
+        }
       ]
     },
     {
-      "id": "experiencia",
       "titulo": "Experiencia",
       "entradas": [
-        { "incluir": true, "titulo": "Collins Aerospace - Aguadilla, PR", "subtitulo": "Interno, Mission Systems (DevSecOps)", "fecha": "Junio 2026 - Presente", "detalle": "Internado en el departamento de Mission Systems trabajando en prácticas de DevSecOps." }
+        {
+          "incluir": true,
+          "titulo": "Collins Aerospace",
+          "subtitulo": "Internado — DevSecOps, Mission Systems",
+          "fecha": "Junio 2026 – presente",
+          "detalle": "Collins Aerospace, subsidiaria de RTX, es uno de los mayores proveedores mundiales de productos aeroespaciales y de defensa. Internado en la división de Mission Systems enfocado en DevSecOps, integrando prácticas de seguridad dentro del ciclo de desarrollo de software. Aguadilla, Puerto Rico."
+        }
       ]
     },
     {
-      "id": "certificados",
-      "titulo": "Certificados",
+      "titulo": "Certificaciones",
       "entradas": [
-        { "incluir": true, "titulo": "Google Cybersecurity Certificate", "subtitulo": "Google", "fecha": "Jul 2024 - Dic 2024", "detalle": "Experiencia práctica en detección de amenazas, manejo de riesgo, seguridad de redes y respuesta a incidentes usando herramientas como Linux, SQL y Python." }
+        {
+          "incluir": true,
+          "titulo": "Google Cybersecurity Certificate",
+          "subtitulo": "Google (vía Coursera)",
+          "fecha": "",
+          "detalle": "Programa profesional de ocho cursos enfocado en seguridad informática a nivel de entrada. Cubre fundamentos de seguridad, identificación de riesgos, amenazas y vulnerabilidades, seguridad de redes, detección y respuesta a incidentes, herramientas SIEM, y uso de Python, SQL y Linux aplicados a la ciberseguridad."
+        }
       ]
     },
     {
-      "id": "proyectos",
       "titulo": "Proyectos Técnicos",
       "entradas": [
-        { "incluir": true, "titulo": "TIO-PR: Chatbot de Turismo con IA", "fecha": "Dic 2025", "detalle": "Diseño de un chatbot inteligente para el oeste de Puerto Rico usando la plataforma TARS AI, optimizando la interacción del viajero para promover el turismo local." },
-        { "incluir": true, "titulo": "Customer Churn Predictive Model", "fecha": "Mayo 2025", "detalle": "Pipeline de machine learning con Regresión Logística, Árboles de Decisión y Random Forests para identificar clientes en riesgo y apoyar estrategias de retención." },
-        { "incluir": true, "titulo": "LPSIMP: Diseño de Compilador (Analizadores Léxico y Sintáctico)", "fecha": "Dic 2025", "detalle": "Implementación de analizadores léxico y sintáctico para el lenguaje LPSIMP usando expresiones regulares y gramáticas formales." }
+        {
+          "incluir": true,
+          "titulo": "TIO-PR — Chatbot Turístico Inteligente",
+          "subtitulo": "Proyecto en equipo — UPRM",
+          "fecha": "Diciembre 2025",
+          "detalle": "Propuesta y prototipo de un chatbot turístico bilingüe (español/inglés) para el oeste de Puerto Rico (Porta del Sol). Diseño híbrido que combina reglas, inteligencia artificial e IA generativa para recomendar playas, atardeceres y comida local. Prototipo construido en Landbot.io con un flujo conversacional por bloques."
+        },
+        {
+          "incluir": true,
+          "titulo": "Modelo Predictivo de Cancelación de Clientes (Customer Churn)",
+          "subtitulo": "Proyecto de aprendizaje automático en equipo — UPRM",
+          "fecha": "2025",
+          "detalle": "Predicción de cancelación de clientes usando el conjunto de datos IBM Telco. Comparación de seis modelos de clasificación: Regresión Logística, Árbol de Decisión, Random Forest, Naïve Bayes, SVM y Gradient Boosting. Random Forest obtuvo el mejor desempeño (~92.6% de exactitud). Preprocesamiento con one-hot encoding, normalización y muestreo estratificado; interpretabilidad de resultados con valores SHAP. Implementado en Python con scikit-learn."
+        },
+        {
+          "incluir": true,
+          "titulo": "LPSIMP — Analizadores Léxico y Sintáctico",
+          "subtitulo": "Proyecto de compiladores en equipo — UPRM",
+          "fecha": "Otoño 2025",
+          "detalle": "Diseño e implementación de los analizadores léxico y sintáctico del lenguaje de programación LPSIMP. Analizador léxico construido con Flex y analizador sintáctico con Bison, en lenguaje C. Incluye gramática formal, definición de tokens, autómatas finitos deterministas y manejo de múltiples errores. Herramientas: MSYS2 y Visual Studio Code. (Curso COMP 4998)."
+        }
       ]
     },
     {
-      "id": "liderazgo",
-      "titulo": "Experiencia de Liderazgo",
+      "titulo": "Cursos Relevantes",
       "entradas": [
-        { "incluir": true, "titulo": "Assistant Scoutmaster", "subtitulo": "Boy Scouts of America (BSA)", "fecha": "Dic 2019 - Presente", "detalle": "Apoyo al Scoutmaster organizando campamentos, reuniones y actividades del programa BSA." }
+        {
+          "incluir": true,
+          "titulo": "COMP 3010 — Introducción a la Programación de Computadoras I",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "COMP 3110 — Introducción a la Programación de Computadoras II",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "CIIC 4020 — Estructuras de Datos",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "COMP 4016 — Organización de Computadoras",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "COMP 4006 — Sistemas Operativos",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "COMP 5015 — Inteligencia Artificial",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "COMP 4998 — Tópicos en Computación I",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "MATE 3181 — Matemática Discreta I",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "MATE 4031 — Álgebra Lineal",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "ESMA 3016 — Análisis Estadístico de Datos",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "FILO 3185 — Ética Computacional",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "MATE 4990 — Investigación Subgraduada",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": false,
+          "titulo": "MATE 3031 — Cálculo I",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": false,
+          "titulo": "MATE 3032 — Cálculo II",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": false,
+          "titulo": "MATE 3063 — Cálculo III",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        }
       ]
     },
     {
-      "id": "afiliaciones",
-      "titulo": "Afiliaciones",
+      "titulo": "Cursos en Progreso",
       "entradas": [
-        { "incluir": true, "titulo": "Panda Hat", "subtitulo": "Miembro", "fecha": "Ago 2024 - Presente", "detalle": "Asociación de ciberseguridad enfocada en el desarrollo de destrezas y la concienciación en UPR Mayagüez." },
-        { "incluir": true, "titulo": "CAHSI", "subtitulo": "Miembro", "fecha": "Ene 2024 - Presente", "detalle": "Computing Alliance of Hispanic-Serving Institutions: red de instituciones que promueve el avance de hispanos en computación mediante mentoría y recursos." },
-        { "incluir": true, "titulo": "Boy Scouts of America (BSA)", "subtitulo": "Miembro", "fecha": "Sep 2015 - Presente", "detalle": "Actividades al aire libre, desarrollo de liderazgo y servicio comunitario." }
+        {
+          "incluir": true,
+          "titulo": "COMP 4009 — Ingeniería de Programación",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "COMP 4018 — Sistemas de Bases de Datos",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": true,
+          "titulo": "COMP 4036 — Lenguajes de Programación",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        }
       ]
     },
     {
-      "id": "destrezas",
-      "titulo": "Destrezas",
+      "titulo": "Cursos por Tomar",
       "entradas": [
-        { "incluir": true, "titulo": "Programación (SQL, Python, C++)" },
-        { "incluir": true, "titulo": "Seguridad de redes" },
-        { "incluir": true, "titulo": "Respuesta a incidentes" },
-        { "incluir": true, "titulo": "Línea de comandos de Linux" },
-        { "incluir": true, "titulo": "Análisis de amenazas y manejo de riesgo" },
-        { "incluir": true, "titulo": "Seguridad de sistemas operativos" }
+        {
+          "incluir": false,
+          "titulo": "COMP 4017 — Algoritmos de Computadoras",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": false,
+          "titulo": "COMP 4046 — Gráficas de Computadoras",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        },
+        {
+          "incluir": false,
+          "titulo": "Electiva Profesional de COMP",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": ""
+        }
       ]
     },
     {
-      "id": "idiomas",
+      "titulo": "Habilidades Técnicas",
+      "entradas": [
+        {
+          "incluir": true,
+          "titulo": "Lenguajes de programación",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "Python, C, JavaScript, PHP, SQL, Prolog, HTML/CSS"
+        },
+        {
+          "incluir": true,
+          "titulo": "Herramientas y tecnologías",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "Git/GitHub, scikit-learn, Flex, Bison, Visual Studio Code, MSYS2"
+        },
+        {
+          "incluir": true,
+          "titulo": "Áreas de interés",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "DevSecOps, ciberseguridad, aprendizaje automático, diseño de compiladores, desarrollo web"
+        }
+      ]
+    },
+    {
       "titulo": "Idiomas",
       "entradas": [
-        { "incluir": true, "titulo": "Inglés" },
-        { "incluir": true, "titulo": "Español" }
+        {
+          "incluir": true,
+          "titulo": "Español",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "Nativo"
+        },
+        {
+          "incluir": true,
+          "titulo": "Inglés",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "Competente (nivel profesional)"
+        },
+        {
+          "incluir": true,
+          "titulo": "Francés",
+          "subtitulo": "",
+          "fecha": "",
+          "detalle": "Básico"
+        }
       ]
     }
   ]
