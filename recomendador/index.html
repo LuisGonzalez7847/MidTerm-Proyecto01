@@ -5,66 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recomendador Turístico del Oeste (Prolog)</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 640px; margin: 30px auto; padding: 0 16px; color: #222; }
-    h1 { font-size: 22px; }
-    p.intro { color: #555; }
-    .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 18px 0; }
-    label { display: block; font-size: 14px; margin-bottom: 4px; }
-    select { width: 100%; padding: 6px; }
-    button { padding: 10px 18px; font-size: 15px; cursor: pointer; }
-    #resultados { margin-top: 18px; }
-    #resultados ul { padding-left: 20px; }
-    .query-box { margin-top: 18px; font-size: 13px; color: #555; }
-    .query-box code { background: #f2f2f2; padding: 4px 6px; display: inline-block; margin-top: 4px; }
+    :root {
+      --mar: #117a8b;
+      --mar-claro: #2a9db5;
+      --atardecer: #ff7a59;
+      --arena: #fbf3e7;
+      --texto: #2b2b2b;
+    }
+    body {
+      font-family: Arial, sans-serif; max-width: 680px; margin: 0 auto 40px auto;
+      background: var(--arena); color: var(--texto);
+    }
+    header {
+      background: linear-gradient(120deg, var(--atardecer), #ffb347 45%, var(--mar-claro));
+      color: #fff; padding: 26px 22px; border-radius: 0 0 14px 14px; margin-bottom: 22px;
+    }
+    header h1 { font-size: 23px; margin: 0 0 6px 0; }
+    header p { margin: 0; font-size: 14px; opacity: 0.95; }
+    main { padding: 0 22px; }
+    .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    label { display: block; font-size: 13px; font-weight: bold; margin-bottom: 4px; color: var(--mar); }
+    select { width: 100%; padding: 8px; border: 1px solid #d8cdba; border-radius: 6px; background: #fff; font-size: 14px; }
+    button {
+      margin-top: 16px; padding: 11px 22px; font-size: 15px; cursor: pointer; color: #fff;
+      background: var(--atardecer); border: none; border-radius: 8px; font-weight: bold;
+    }
+    button:hover { background: #ef6645; }
+    .conteo { color: var(--mar); font-weight: bold; margin: 22px 0 10px 0; }
+    .vacio { margin-top: 22px; color: #7a6f5f; }
+    .tarjeta {
+      background: #fff; border-left: 6px solid #ccc; border-radius: 8px;
+      padding: 12px 14px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .nombre { font-size: 16px; font-weight: bold; margin-bottom: 6px; }
+    .badge { display: inline-block; color: #fff; font-size: 12px; padding: 2px 9px; border-radius: 12px; }
+    .meta { margin-top: 7px; font-size: 13px; color: #6b6256; }
+    .query-box { margin-top: 24px; font-size: 13px; color: #7a6f5f; }
+    .query-box code { background: #efe6d6; padding: 5px 8px; border-radius: 4px; display: inline-block; margin-top: 4px; }
   </style>
 </head>
 <body>
-  <h1>Recomendador Turístico del Oeste</h1>
-  <p class="intro">Escoge tus preferencias. Las reglas en Prolog (Tau Prolog) deciden qué lugares del oeste de Puerto Rico cumplen con lo que pides.</p>
+  <header>
+    <h1>Recomendador Turístico del Oeste 🌅</h1>
+    <p>Escoge tus preferencias. Las reglas en Prolog (Tau Prolog) deciden qué lugares del oeste de Puerto Rico cumplen con lo que pides.</p>
+  </header>
 
-  <div class="menu">
-    <div>
-      <label for="tipo">Tipo</label>
-      <select id="tipo">
-        <option value="playa">Playa</option>
-        <option value="atardecer">Punto de atardecer</option>
-        <option value="comida">Comida</option>
-      </select>
+  <main>
+    <div class="menu">
+      <div>
+        <label for="tipo">Tipo</label>
+        <select id="tipo">
+          <option value="playa">Playa</option>
+          <option value="mirador">Atardecer / mirador</option>
+          <option value="comida">Comida</option>
+          <option value="naturaleza">Naturaleza</option>
+          <option value="cultura">Cultura e historia</option>
+        </select>
+      </div>
+      <div>
+        <label for="presupuesto">Presupuesto</label>
+        <select id="presupuesto">
+          <option value="gratis">Gratis</option>
+          <option value="pago">De pago</option>
+        </select>
+      </div>
+      <div>
+        <label for="momento">Momento</label>
+        <select id="momento">
+          <option value="dia">De día</option>
+          <option value="atardecer">Al atardecer</option>
+          <option value="noche">De noche</option>
+        </select>
+      </div>
+      <div>
+        <label for="pueblo">Pueblo</label>
+        <select id="pueblo">
+          <option value="cualquiera">Cualquiera</option>
+          <option value="aguadilla">Aguadilla</option>
+          <option value="isabela">Isabela</option>
+          <option value="rincon">Rincón</option>
+          <option value="mayaguez">Mayagüez</option>
+          <option value="cabo_rojo">Cabo Rojo</option>
+          <option value="lajas">Lajas (La Parguera)</option>
+          <option value="san_german">San Germán</option>
+          <option value="san_sebastian">San Sebastián</option>
+        </select>
+      </div>
     </div>
-    <div>
-      <label for="presupuesto">Presupuesto</label>
-      <select id="presupuesto">
-        <option value="gratis">Gratis</option>
-        <option value="pago">De pago</option>
-      </select>
-    </div>
-    <div>
-      <label for="momento">Momento</label>
-      <select id="momento">
-        <option value="dia">De día</option>
-        <option value="atardecer">Al atardecer</option>
-      </select>
-    </div>
-    <div>
-      <label for="pueblo">Pueblo</label>
-      <select id="pueblo">
-        <option value="cualquiera">Cualquiera</option>
-        <option value="aguadilla">Aguadilla</option>
-        <option value="rincon">Rincón</option>
-        <option value="cabo_rojo">Cabo Rojo</option>
-        <option value="mayaguez">Mayagüez</option>
-      </select>
-    </div>
-  </div>
 
-  <button onclick="recomendar()">Recomendar</button>
+    <button onclick="recomendar()">Recomendar</button>
 
-  <div id="resultados"></div>
+    <div id="resultados"></div>
 
-  <div class="query-box">
-    Consulta enviada a Prolog:
-    <code id="consulta">(todavía no has pedido nada)</code>
-  </div>
+    <div class="query-box">
+      Consulta enviada a Prolog:
+      <code id="consulta">(todavía no has pedido nada)</code>
+    </div>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.4/modules/core.js"></script>
   <script src="recomendador.js"></script>
