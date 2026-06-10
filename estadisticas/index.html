@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas (estilo funcional)</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 30px auto; padding: 0 16px; color: #222; }
+    h1 { font-size: 22px; }
+    p.intro { color: #555; }
+    textarea { width: 100%; height: 70px; padding: 8px; font-size: 15px; box-sizing: border-box; }
+    button { padding: 10px 18px; font-size: 15px; cursor: pointer; margin-top: 10px; }
+    #resultados { margin-top: 18px; }
+    table { border-collapse: collapse; margin-bottom: 12px; }
+    td { border: 1px solid #ccc; padding: 6px 14px; }
+    td:first-child { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Estadísticas de una lista de números</h1>
+  <p class="intro">Escribe varios números separados por comas o espacios. El cálculo se hace con funciones puras y <code>map</code>, <code>filter</code> y <code>reduce</code> (estilo funcional).</p>
+
+  <textarea id="entrada" placeholder="Ej: 10, 5, 8, 3, 20, 7"></textarea>
+  <br>
+  <button onclick="calcular()">Calcular</button>
+
+  <div id="resultados"></div>
+
+  <script src="estadisticas.js"></script>
+</body>
+</html>
