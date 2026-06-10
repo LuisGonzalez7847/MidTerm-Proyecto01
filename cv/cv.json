@@ -1,0 +1,87 @@
+{
+  "nombre": "Luis A. González Pérez",
+  "categorias": [
+    {
+      "id": "contacto",
+      "titulo": "Contacto",
+      "entradas": [
+        { "incluir": true, "titulo": "Teléfono", "detalle": "(787) 612-7847" },
+        { "incluir": true, "titulo": "Correo", "detalle": "luis.gonzalez222@upr.edu" },
+        { "incluir": true, "titulo": "LinkedIn", "detalle": "www.linkedin.com/in/luis-gonzalez0822" }
+      ]
+    },
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo",
+      "entradas": [
+        { "incluir": true, "detalle": "Estudiante de Ciencias de Computación en la Universidad de Puerto Rico en busca de internados, coops o proyectos de investigación donde pueda aportar y desarrollar destrezas de liderazgo, trabajo en equipo y manejo de proyectos, ganando experiencia práctica en proyectos innovadores." }
+      ]
+    },
+    {
+      "id": "educacion",
+      "titulo": "Educación",
+      "entradas": [
+        { "incluir": true, "titulo": "Universidad de Puerto Rico - Recinto de Mayagüez", "subtitulo": "Bachillerato en Ciencias de Computación", "fecha": "Graduación esperada: Mayo 2027" }
+      ]
+    },
+    {
+      "id": "experiencia",
+      "titulo": "Experiencia",
+      "entradas": [
+        { "incluir": true, "titulo": "Collins Aerospace - Aguadilla, PR", "subtitulo": "Interno, Mission Systems (DevSecOps)", "fecha": "Junio 2026 - Presente", "detalle": "Internado en el departamento de Mission Systems trabajando en prácticas de DevSecOps." }
+      ]
+    },
+    {
+      "id": "certificados",
+      "titulo": "Certificados",
+      "entradas": [
+        { "incluir": true, "titulo": "Google Cybersecurity Certificate", "subtitulo": "Google", "fecha": "Jul 2024 - Dic 2024", "detalle": "Experiencia práctica en detección de amenazas, manejo de riesgo, seguridad de redes y respuesta a incidentes usando herramientas como Linux, SQL y Python." }
+      ]
+    },
+    {
+      "id": "proyectos",
+      "titulo": "Proyectos Técnicos",
+      "entradas": [
+        { "incluir": true, "titulo": "TIO-PR: Chatbot de Turismo con IA", "fecha": "Dic 2025", "detalle": "Diseño de un chatbot inteligente para el oeste de Puerto Rico usando la plataforma TARS AI, optimizando la interacción del viajero para promover el turismo local." },
+        { "incluir": true, "titulo": "Customer Churn Predictive Model", "fecha": "Mayo 2025", "detalle": "Pipeline de machine learning con Regresión Logística, Árboles de Decisión y Random Forests para identificar clientes en riesgo y apoyar estrategias de retención." },
+        { "incluir": true, "titulo": "LPSIMP: Diseño de Compilador (Analizadores Léxico y Sintáctico)", "fecha": "Dic 2025", "detalle": "Implementación de analizadores léxico y sintáctico para el lenguaje LPSIMP usando expresiones regulares y gramáticas formales." }
+      ]
+    },
+    {
+      "id": "liderazgo",
+      "titulo": "Experiencia de Liderazgo",
+      "entradas": [
+        { "incluir": true, "titulo": "Assistant Scoutmaster", "subtitulo": "Boy Scouts of America (BSA)", "fecha": "Dic 2019 - Presente", "detalle": "Apoyo al Scoutmaster organizando campamentos, reuniones y actividades del programa BSA." }
+      ]
+    },
+    {
+      "id": "afiliaciones",
+      "titulo": "Afiliaciones",
+      "entradas": [
+        { "incluir": true, "titulo": "Panda Hat", "subtitulo": "Miembro", "fecha": "Ago 2024 - Presente", "detalle": "Asociación de ciberseguridad enfocada en el desarrollo de destrezas y la concienciación en UPR Mayagüez." },
+        { "incluir": true, "titulo": "CAHSI", "subtitulo": "Miembro", "fecha": "Ene 2024 - Presente", "detalle": "Computing Alliance of Hispanic-Serving Institutions: red de instituciones que promueve el avance de hispanos en computación mediante mentoría y recursos." },
+        { "incluir": true, "titulo": "Boy Scouts of America (BSA)", "subtitulo": "Miembro", "fecha": "Sep 2015 - Presente", "detalle": "Actividades al aire libre, desarrollo de liderazgo y servicio comunitario." }
+      ]
+    },
+    {
+      "id": "destrezas",
+      "titulo": "Destrezas",
+      "entradas": [
+        { "incluir": true, "titulo": "Programación (SQL, Python, C++)" },
+        { "incluir": true, "titulo": "Seguridad de redes" },
+        { "incluir": true, "titulo": "Respuesta a incidentes" },
+        { "incluir": true, "titulo": "Línea de comandos de Linux" },
+        { "incluir": true, "titulo": "Análisis de amenazas y manejo de riesgo" },
+        { "incluir": true, "titulo": "Seguridad de sistemas operativos" }
+      ]
+    },
+    {
+      "id": "idiomas",
+      "titulo": "Idiomas",
+      "entradas": [
+        { "incluir": true, "titulo": "Inglés" },
+        { "incluir": true, "titulo": "Español" }
+      ]
+    }
+  ]
+}
