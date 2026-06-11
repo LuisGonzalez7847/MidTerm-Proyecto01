@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MidTerm - Proyecto 01: Nuevos Lenguajes</title>
+  <style>
+    :root { --mar: #117a8b; --mar-claro: #2a9db5; --atardecer: #ff7a59; --arena: #fbf3e7; --texto: #2b2b2b; }
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 0 auto 40px auto; background: var(--arena); color: var(--texto); }
+    header { background: linear-gradient(120deg, var(--atardecer), #ffb347 45%, var(--mar-claro)); color: #fff; padding: 30px 24px; border-radius: 0 0 14px 14px; margin-bottom: 24px; }
+    header h1 { font-size: 25px; margin: 0 0 6px 0; }
+    header p { margin: 0; font-size: 14px; opacity: 0.95; }
+    main { padding: 0 24px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    a.tarjeta { display: block; background: #fff; border-left: 6px solid var(--mar-claro); border-radius: 8px; padding: 14px 16px; text-decoration: none; color: var(--texto); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    a.tarjeta:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
+    .nombre { font-size: 16px; font-weight: bold; color: var(--mar); }
+    .tipo { font-size: 13px; color: #6b6256; margin-top: 4px; }
+    h2 { color: var(--mar); font-size: 17px; margin-top: 28px; }
+    .creditos { font-size: 13px; color: #6b6256; line-height: 1.6; }
+    .creditos a { color: var(--mar); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MidTerm - Proyecto 01: Nuevos Lenguajes 🌅</h1>
+    <p>Luis A. González Pérez · 7 programas en distintos paradigmas (JavaScript y PHP)</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <a class="tarjeta" href="recomendador/">
+        <div class="nombre">Recomendador turístico</div>
+        <div class="tipo">Lógico · Prolog (Tau Prolog)</div>
+      </a>
+      <a class="tarjeta" href="estadisticas/">
+        <div class="nombre">Estadísticas</div>
+        <div class="tipo">Funcional · JavaScript</div>
+      </a>
+      <a class="tarjeta" href="perfil/">
+        <div class="nombre">Generador de perfil</div>
+        <div class="tipo">JS libre · entrada/salida por URL</div>
+      </a>
+      <a class="tarjeta" href="banco/">
+        <div class="nombre">Banco</div>
+        <div class="tipo">Orientado a objetos · PHP</div>
+      </a>
+      <a class="tarjeta" href="imperativo/">
+        <div class="nombre">Fibonacci y Factorial</div>
+        <div class="tipo">Imperativo · PHP</div>
+      </a>
+      <a class="tarjeta" href="libro/">
+        <div class="nombre">Libro de visitas</div>
+        <div class="tipo">PHP libre</div>
+      </a>
+      <a class="tarjeta" href="cv/">
+        <div class="nombre">Curriculum Vitae</div>
+        <div class="tipo">JavaScript · resume + PDF</div>
+      </a>
+    </div>
+
+    <h2>Créditos</h2>
+    <p class="creditos">
+      Recomendador turístico: usa <a href="http://tau-prolog.org/">Tau Prolog</a>, un intérprete de Prolog en JavaScript.<br>
+      Curriculum Vitae: usa <a href="https://github.com/parallax/jsPDF">jsPDF</a> para generar el PDF.<br>
+      Los datos de los lugares del recomendador provienen de un proyecto propio sobre turismo en el oeste de Puerto Rico (TIO-PR).
+    </p>
+  </main>
+</body>
+</html>
