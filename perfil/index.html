@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Tarjeta de Perfil</title>
+  <style>
+    :root {
+      --mar: #117a8b;
+      --mar-claro: #2a9db5;
+      --atardecer: #ff7a59;
+      --arena: #fbf3e7;
+      --texto: #2b2b2b;
+    }
+    body {
+      font-family: Arial, sans-serif; max-width: 680px; margin: 0 auto 40px auto;
+      background: var(--arena); color: var(--texto);
+    }
+    header {
+      background: linear-gradient(120deg, var(--atardecer), #ffb347 45%, var(--mar-claro));
+      color: #fff; padding: 26px 22px; border-radius: 0 0 14px 14px; margin-bottom: 22px;
+    }
+    header h1 { font-size: 23px; margin: 0 0 6px 0; }
+    header p { margin: 0; font-size: 14px; opacity: 0.95; }
+    main { padding: 0 22px; }
+    label { display: block; font-size: 13px; font-weight: bold; margin: 12px 0 4px 0; color: var(--mar); }
+    input[type=text], select {
+      width: 100%; padding: 8px; border: 1px solid #d8cdba; border-radius: 6px;
+      background: #fff; font-size: 14px; box-sizing: border-box;
+    }
+    button {
+      margin-top: 16px; padding: 11px 22px; font-size: 15px; cursor: pointer; color: #fff;
+      background: var(--atardecer); border: none; border-radius: 8px; font-weight: bold;
+    }
+    button:hover { background: #ef6645; }
+    button.sec { background: var(--mar); }
+    button.sec:hover { background: #0d6577; }
+    #salida { display: none; margin-top: 18px; background: #fff; border-radius: 8px; padding: 14px 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    #f-enlace { margin-top: 4px; font-size: 13px; color: #555; }
+    #salida a { display: inline-block; margin-top: 10px; margin-left: 10px; color: var(--mar); font-size: 14px; }
+    #tarjeta { margin-top: 22px; }
+    .tarjeta-perfil {
+      background: #fff; border-top: 6px solid var(--mar); border-radius: 12px;
+      padding: 22px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 360px; margin: 0 auto;
+    }
+    .avatar {
+      width: 64px; height: 64px; border-radius: 50%; color: #fff; font-size: 30px; font-weight: bold;
+      line-height: 64px; margin: 0 auto 12px auto;
+    }
+    .tarjeta-perfil h2 { margin: 0; font-size: 20px; }
+    .rol { color: #555; font-size: 14px; margin-top: 4px; }
+    .lugar { color: #777; font-size: 13px; margin-top: 6px; }
+    .lema { font-style: italic; color: var(--mar); margin-top: 14px; }
+    hr { border: none; border-top: 1px solid #e3d8c6; margin: 26px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Generador de Tarjeta de Perfil 🪪</h1>
+    <p>Llena tus datos y genera un enlace. Al abrir ese enlace, el programa lee los datos del URL y dibuja tu tarjeta.</p>
+  </header>
+
+  <main>
+    <div id="tarjeta"></div>
+
+    <hr>
+
+    <h3 style="color:var(--mar)">Crear una tarjeta</h3>
+    <label for="f-nombre">Nombre</label>
+    <input type="text" id="f-nombre" placeholder="Luis A. González">
+
+    <label for="f-rol">Rol o título</label>
+    <input type="text" id="f-rol" placeholder="Estudiante de Ciencias de Computación">
+
+    <label for="f-lugar">Lugar</label>
+    <input type="text" id="f-lugar" placeholder="Mayagüez, PR">
+
+    <label for="f-lema">Lema (frase corta)</label>
+    <input type="text" id="f-lema" placeholder="Aprendiendo y creando">
+
+    <label for="f-color">Color</label>
+    <select id="f-color">
+      <option value="mar">Mar</option>
+      <option value="atardecer">Atardecer</option>
+      <option value="verde">Verde</option>
+      <option value="morado">Morado</option>
+    </select>
+
+    <br>
+    <button onclick="generar()">Generar enlace</button>
+
+    <div id="salida">
+      <label for="f-enlace">Tu enlace (cópialo y compártelo):</label>
+      <input type="text" id="f-enlace" readonly>
+      <button class="sec" onclick="copiar()">Copiar</button>
+      <a id="f-abrir" href="#">Abrir tarjeta →</a>
+    </div>
+  </main>
+
+  <script src="perfil.js"></script>
+</body>
+</html>
