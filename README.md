@@ -45,3 +45,9 @@ Imperativo: Fibonacci y Factorial (PHP).
 Funcional: Estadísticas (JavaScript).
 Lógico: Recomendador turístico (Prolog / Tau Prolog).
 Orientado a objetos: Banco (PHP).
+
+## Créditos y referencias
+
+Recomendador turístico: usa Tau Prolog (http://tau-prolog.org/), un intérprete de Prolog en JavaScript.
+CV: usa jsPDF (https://github.com/parallax/jsPDF) para generar el PDF.
+Los datos de los lugares del recomendador provienen de un proyecto propio sobre turismo en el oeste de Puerto Rico (TIO-PR).
